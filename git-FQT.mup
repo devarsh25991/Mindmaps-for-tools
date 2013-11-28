@@ -1,0 +1,109 @@
+{
+  "title": "git-FQT",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "LINKS",
+      "id": 15,
+      "ideas": {
+        "1": {
+          "title": "git i/o tutorial",
+          "id": 16,
+          "ideas": {
+            "1": {
+              "title": "http://pcottle.github.io/learnGitBranching/",
+              "id": 18
+            }
+          }
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "-0.5": {
+      "title": "basics",
+      "id": 7,
+      "ideas": {
+        "1": {
+          "title": "for sharing ",
+          "id": 5,
+          "ideas": {
+            "1": {
+              "title": "code stored in each of the shared pcs",
+              "id": 6
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#E0E0E0"
+            }
+          }
+        },
+        "2": {
+          "title": "It's a DVCS",
+          "id": 2,
+          "ideas": {
+            "1": {
+              "title": "Distributed version control system",
+              "id": 4
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#E0E0E0"
+            }
+          }
+        },
+        "3": {
+          "title": "two step process",
+          "id": 8,
+          "ideas": {
+            "1": {
+              "title": "stage",
+              "id": 9,
+              "ideas": {
+                "1": {
+                  "title": "stage the changed files for commit",
+                  "id": 11,
+                  "ideas": {
+                    "1": {
+                      "title": "only staged files will be committed",
+                      "id": 12
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "commit",
+              "id": 10,
+              "ideas": {
+                "1": {
+                  "title": "save the changes ",
+                  "id": 13,
+                  "ideas": {
+                    "1": {
+                      "title": "new commit id will be formed",
+                      "id": 14
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    }
+  }
+}
