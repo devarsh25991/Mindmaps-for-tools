@@ -25,6 +25,136 @@
         }
       }
     },
+    "2": {
+      "title": "committing",
+      "id": 19,
+      "ideas": {
+        "1": {
+          "title": "taking snapshots of the files",
+          "id": 20
+        },
+        "2": {
+          "title": "follows delta model",
+          "id": 21,
+          "ideas": {
+            "1": {
+              "title": "saves the changes only",
+              "id": 22
+            }
+          }
+        },
+        "3": {
+          "title": "git commit",
+          "id": 23
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "3": {
+      "title": "merging",
+      "id": 35,
+      "ideas": {
+        "1": {
+          "title": "suppose we have to branches ",
+          "id": 36,
+          "ideas": {
+            "1": {
+              "title": "one master and other bugFix",
+              "id": 37
+            },
+            "2": {
+              "title": "merge the work of master to bugFix",
+              "id": 38
+            },
+            "3": {
+              "title": "git checkout bugFix",
+              "id": 39,
+              "ideas": {
+                "1": {
+                  "title": "move to bugFix",
+                  "id": 40
+                }
+              }
+            },
+            "4": {
+              "title": "git merge master",
+              "id": 41,
+              "ideas": {
+                "1": {
+                  "title": "now bugFix contains all the work of itself + master",
+                  "id": 42
+                }
+              }
+            }
+          }
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "4": {
+      "title": "HEAD",
+      "id": 57,
+      "ideas": {
+        "1": {
+          "title": "head is nothing but symbolic name to currently checked out commit",
+          "id": 58,
+          "ideas": {
+            "1": {
+              "title": "Normally it point to current branch",
+              "id": 59,
+              "ideas": {
+                "1": {
+                  "title": "the start on the branch specifies the HEAD",
+                  "id": 62
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "detach head",
+          "id": 60,
+          "ideas": {
+            "1": {
+              "title": "suppose we are on bugFix",
+              "id": 61,
+              "ideas": {
+                "1": {
+                  "title": "the bugFix* specifies the HEAD",
+                  "id": 63,
+                  "ideas": {
+                    "1": {
+                      "title": "bugFix c3<c2<c1<c0",
+                      "id": 64
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "git checkout c3",
+              "id": 66,
+              "ideas": {
+                "1": {
+                  "title": "HEAD AT c3",
+                  "id": 67
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "-0.5": {
       "title": "basics",
       "id": 7,
@@ -94,6 +224,164 @@
                   }
                 }
               }
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {
+          "background": "#E0E0E0"
+        },
+        "collapsed": true
+      }
+    },
+    "-1.5": {
+      "title": "branching",
+      "id": 24,
+      "ideas": {
+        "1": {
+          "title": "By default work on master branch",
+          "id": 25
+        },
+        "2": {
+          "title": "git checkout -b bugFix",
+          "id": 26,
+          "ideas": {
+            "1": {
+              "title": "we created and moved to branch bugFix",
+              "id": 27
+            }
+          }
+        },
+        "3": {
+          "title": "git branch -a",
+          "id": 29,
+          "ideas": {
+            "1": {
+              "title": "list out all branches",
+              "id": 30
+            }
+          }
+        },
+        "4": {
+          "title": "git branch bugFix",
+          "id": 31,
+          "ideas": {
+            "1": {
+              "title": "create branch bugFix",
+              "id": 32
+            }
+          }
+        },
+        "5": {
+          "title": "git checkout bugFix ",
+          "id": 33,
+          "ideas": {
+            "1": {
+              "title": "move to bugFix branch",
+              "id": 34
+            }
+          }
+        },
+        "0.5": {
+          "title": "branches are just references to commits",
+          "id": 28
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "-2.5": {
+      "title": "rebasing",
+      "id": 43,
+      "ideas": {
+        "1": {
+          "title": "suppose we are working on a seperate feature at one branch",
+          "id": 44,
+          "ideas": {
+            "1": {
+              "title": "we have completed that work and want to merge it with master",
+              "id": 45,
+              "ideas": {
+                "1": {
+                  "title": "we have to rebase the feature branch to master",
+                  "id": 47,
+                  "ideas": {
+                    "1": {
+                      "title": "it would look like work was done sequentially",
+                      "id": 48
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "title": "master has c3<c2<c1<c0 commits",
+          "id": 50
+        },
+        "4": {
+          "title": "bugFix has c2!<c1<c0",
+          "id": 51
+        },
+        "9": {
+          "title": "git checkout bugFix",
+          "id": 52,
+          "ideas": {
+            "1": {
+              "title": "we move to bugFix",
+              "id": 53
+            }
+          }
+        },
+        "14": {
+          "title": "git rebase master",
+          "id": 46,
+          "ideas": {
+            "1": {
+              "title": "now ",
+              "id": 54,
+              "ideas": {
+                "1": {
+                  "title": "c2! would be on top of master",
+                  "id": 55
+                }
+              }
+            },
+            "2": {
+              "title": "c2!<c3<c2<c1<c0",
+              "id": 56
+            }
+          }
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "-3.5": {
+      "title": "RELATIVE REFS",
+      "id": 68,
+      "ideas": {
+        "1": {
+          "title": "can use the first four characters of commit hash",
+          "id": 69
+        },
+        "2": {
+          "title": "moving upward one commit",
+          "id": 70,
+          "ideas": {
+            "1": {
+              "title": "git checkout HEAD^",
+              "id": 71
             }
           }
         }
